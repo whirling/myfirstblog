@@ -57,3 +57,6 @@ h1, h2, h3, h4 {
 .link {
     color: #716cc6
 }
+.glyphicon {
+  size: 100%;
+}
