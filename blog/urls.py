@@ -1,5 +1,8 @@
-from django.conf.urls import url
+from django.conf.urls import include, url
 from . import views
+from django.contrib import admin
+
+from django.contrib.auth import views
 
 urlpatterns = [
     url(r'^$', views.post_list, name='post_list'),
@@ -9,4 +12,8 @@ urlpatterns = [
     url(r'^post/(?P<pk>\d+)/publish/$', views.post_publish, name='post_publish'),
     url(r'^post/(?P<pk>\d+)/remove/$', views.post_remove, name='post_remove'),
     url(r'^post/(?P<pk>\d+)/edit/$', views.post_edit, name='post_edit'),
+    url(r'^admin/', include(admin.site.urls)),
+    url(r'^accounts/login/$', views.login, name='login'),
+    url(r'^accounts/logout/$', views.logout, name='logout', kwargs={'next_page': '/'}),
+    url(r'', include('blog.urls')),
 ]
