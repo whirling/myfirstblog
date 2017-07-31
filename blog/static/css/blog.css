@@ -42,7 +42,7 @@ h1, h2, h3, h4 {
 .top-menu, .top-menu:hover, .top-menu:visited {
     color: #d1d0e1;
     float: right;
-    font-size: 26pt;
+    font-size: 16;
     font-family: 'Rubik', sans-serif;
     margin-right: 20px;
 }
@@ -53,4 +53,7 @@ h1, h2, h3, h4 {
 
 .post h1 a, .post h1 a:visited {
     color: #3b3a5a;
+}
+.link {
+    color: #a29ee6
 }
