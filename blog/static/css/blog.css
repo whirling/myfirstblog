@@ -17,7 +17,7 @@ h1 a {
 
 .content {
     margin-left: 40px;
-    font-size: 24pt;
+    font-size: 18pt;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -28,6 +28,7 @@ h1, h2, h3, h4 {
 .date {
     color: #514f78;
     font-family: 'Rubik', sans-serif;
+    font-size: 12pt;
 }
 
 .save {
