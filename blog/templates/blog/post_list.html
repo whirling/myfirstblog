@@ -8,12 +8,12 @@
       <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <div>
+        <div class="page-header">
             <h1><a href="/">emmalog emmablog</a></h1>
         </div>
 
         {% for post in posts %}
-          <div>
+          <div class="post">
               <p>published: {{ post.published_date }}</p>
               <h1><a href="">{{ post.title }}</a></h1>
               <p>{{ post.text|linebreaksbr }}</p>
